@@ -5,7 +5,10 @@ const date = document.get
 const url = "https://api.openweathermap.org/data/2.5/weather?APPID=1322765373529ef9e183768401604ae1";
 
 const time = new Date();
-document.getElementById("demo").innerHTML = time;
+const newtime=time.toDateString()
+console.log(time);
+
+document.getElementById("demo").innerHTML = newtime;
 btn.addEventListener("click", (e) => {
     e.preventDefault();
     const cityName = input.value.trim();
